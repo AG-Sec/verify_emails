@@ -22,7 +22,7 @@ if upload is not None:
         res.append(v)
     st.table(res)
     df_res = pd.DataFrame(res)
-    df_csv = res.to_csv().encode('utf-8')
+    df_csv = df_res.to_csv().encode('utf-8')
     st.download_button(label="Download Results!",
                                     data=df_csv,
                                     file_name="results.csv",
