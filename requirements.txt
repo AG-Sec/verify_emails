@@ -2,3 +2,4 @@ streamlit
 pandas
 csv
 validate_email
+py3dns
